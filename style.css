@@ -1,0 +1,380 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #101010;
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.logo {
+  filter: invert(1);
+  position: absolute;
+  width: 2.5vw;
+  margin-top: 20px;
+}
+
+.vinheta {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  z-index: -1;
+  background: rgb(0,0,0);
+  background: -moz-linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0, 0, 0, 0.073) 100%);
+  background: -webkit-linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0, 0, 0, 0.073) 100%);
+  background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.14187681908700978) 100%);
+}
+
+video {
+  opacity: 25%;
+  position: absolute;
+  background-size: contain;
+  width: 100%;
+  object-fit: fill;
+  z-index: -1;
+  margin-top: -128px;
+}
+
+
+.watch {
+  margin-top: -350px;
+  margin-left: 650px;
+  margin-right: 90px;
+  width: 250px;
+  transform: rotate(-30deg);
+  filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.167));
+}
+
+::-webkit-scrollbar {
+  width: 0.7em;
+}
+
+::-webkit-scrollbar-track {
+  background: #2c2c2c;
+  border-radius: 50px;
+  margin-block: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #6a6a6a;
+  border-radius: 50px;
+  border: solid 2px #2c2c2c;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #151515;
+}
+
+article {
+  position: static;
+  z-index: -1;
+  width: 50vw;
+  height: 900px;
+  animation: slideWatch 2s ease 0s 1 normal forwards;
+}
+
+@keyframes slideWatch {
+  0% {
+    opacity: 0;
+    transform: translateX(-900px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+  height: 900px;
+  justify-content: center;
+  align-items: start;
+}
+
+h1 {
+  font-size: 65px;
+  font-weight: 800;
+  margin-top: -200px;
+}
+
+span {
+  font-weight: 600;
+}
+
+p {
+  font-size: 15px;
+  margin-top: -60px;
+  margin-left: 20px;
+  margin-bottom: 50px;
+}
+
+h2 {
+  font-family: "Barlow", sans-serif;
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  margin-top: -1010px;
+  margin-left: 734px;
+  transform: rotate(-30deg);
+  line-height: 90px;
+  font-size: 110px;
+  font-weight: 900;
+  max-width: 30px;
+}
+
+h3 {
+  font-family: "Barlow", sans-serif;
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  margin-top: -1090px;
+  margin-left: 689px;
+  transform: rotate(-30deg);
+  line-height: 90px;
+  font-size: 110px;
+  font-weight: 900;
+  max-width: 30px;
+}
+
+.simbWatch {
+  filter: invert(1);
+  width: 25px;
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  margin-top: -965px;
+  margin-left: 640px;
+  transform: rotate(-30deg);
+}
+
+
+.playButton {
+  margin-left: 80px;
+  cursor: pointer;
+  width: 250px;
+  padding-left: 60px;
+  height: 60px;
+  background-color: #1a1a1a;
+  border: none;
+  border-radius: 17px;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: -23px;
+  background: rgba(0, 0, 0, 0.454);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(9.9px);
+  -webkit-backdrop-filter: blur(9.9px);
+  border: 2px solid rgba(118, 118, 118, 0.37);
+}
+
+.playButton:hover {
+  border: solid 2px #91cc94;
+}
+
+.resumeButton {
+  margin-left: 80px;
+  cursor: pointer;
+  width: 250px;
+  padding-left: 60px;
+  height: 60px;
+  background-color: #1a1a1a;
+  border: none;
+  border-radius: 17px;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: -23px;
+  display: none;
+  background: rgba(0, 0, 0, 0.454);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(9.9px);
+  -webkit-backdrop-filter: blur(9.9px);
+  border: 2px solid rgba(118, 118, 118, 0.37);
+}
+
+.resumeButton:hover {
+  border: solid 2px #3e4a5f;
+}
+
+.reset {
+  position: absolute;
+  margin-left: 80px;
+  cursor: pointer;
+  width: 100px;
+  height: 35px;
+  background-color: #1a1a1a;
+  border: solid 2px #3c3c3c;
+  border-radius: 10px;
+  color: #ffffff;
+  font-size: 15px;
+  margin-top: 50px;
+}
+
+.reset:hover {
+  background-color: #1d1d1d;
+}
+
+
+.pauseButton {
+  margin-left: 80px;
+  cursor: pointer;
+  width: 250px;
+  padding-left: 60px;
+  height: 60px;
+  background-color: #1a1a1a;
+  border: none;
+  border-radius: 17px;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: -23px;
+  display: none;
+  background: rgba(0, 0, 0, 0.454);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(9.9px);
+  -webkit-backdrop-filter: blur(9.9px);
+  border: 2px solid rgba(118, 118, 118, 0.37);
+}
+
+.pauseButton:hover {
+  border: solid 2px #632121;
+}
+
+
+
+.buttons {
+  display: flex;
+  margin-left: 80px;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  border-radius: 17px;
+  width: 60px;
+  height: 60px;
+  background-color: #ffffff;
+  margin-top: -72px;
+  cursor: pointer;
+
+}
+
+.play:hover {
+  opacity: 70%;
+  transition: 0.1s ease-in-out;
+}
+
+.play {
+  width: 22px;
+}
+
+.resume:hover {
+  opacity: 70%;
+  transition: 0.1s ease-in-out;
+}
+
+.resume {
+  width: 22px;
+  display: none;
+}
+
+.pause:hover {
+  opacity: 70%;
+  transition: 0.1s ease-in-out;
+}
+
+.pause {
+  width: 22px;
+  display: none;
+}
+
+@media (max-width: 1000px) {
+  .watch {
+    margin-left: 0;
+    width: 150px;
+    margin-top:  -10vh;
+    transform: rotate(0deg);
+  }
+
+  article {
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: none;
+  }
+
+  section {
+    margin-left: -210px;
+    margin-top: 60vh;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+  }
+
+  .simbWatch {
+    margin-top: 0;
+    margin-left: 0;
+    transform: rotate(0);
+  }
+
+  h3 {
+    margin-left: 0;  
+    margin-top: 0;
+    transform: rotate(0);
+  }
+
+  h2 {
+    margin-left: 0;  
+    margin-top: -180px;
+    transform: rotate(0);
+  }
+
+  .simbWatch {
+    margin-left: 240px;
+  }
+
+  .buttons {
+    margin-right: 190px;
+    margin-top: -70px;
+    margin-left: 0;
+  }
+
+  .playButton {
+    margin-left: 0;
+  }
+
+  .pauseButton {
+    margin-left: 0;
+  }
+
+  .resumeButton {
+    margin-left: 0;
+  }
+
+  .reset {
+    margin-left: 0;
+  }
+
+  .logo {
+    width: 50px;
+  }
+}

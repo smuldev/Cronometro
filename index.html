@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apple Watch</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Anton&family=Anton+SC&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+
+  <video src="./img/video.mp4" autoplay muted loop ></video>
+
+  <div class="vinheta"></div>
+
+  <img class="logo" src="./img/logo.png" alt="Logo">
+
+
+  <main>
+    <article>
+      <img class="watch" src="./img/relogio.png" alt="Relógio">
+      <h2>00</h2>
+      <h3>00</h3>
+      <img class="simbWatch" src="https://www.svgrepo.com/show/512674/play-1003.svg" alt="play">
+
+    </article>
+
+
+    <section>
+      <h1>Cronômetro</h1>
+      <p>no <span>Apple Watch</span></p>
+      <button class="playButton" onclick="play()">Iniciar</button>
+      <button class="pauseButton" onclick="stop()">Parar</button>
+      <button class="resumeButton" onclick="resume()">Retomar</button>
+      <button class="reset" onclick="reset()">Resetar</button>
+
+
+      <div class="buttons">
+        <img class="play" onclick="play()" src="https://www.svgrepo.com/show/512674/play-1003.svg" alt="play">
+        <img class="resume" onclick="resume()" src="https://www.svgrepo.com/show/512674/play-1003.svg" alt="play">
+        <img class="pause" onclick="stop()" src="https://www.svgrepo.com/show/360783/square-f.svg" alt="play">
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <article>
+
+  </article>
+
+
+  <script src="./scripts.js"></script>
+</body>
+
+
+</html>
